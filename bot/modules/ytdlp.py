@@ -49,7 +49,7 @@ def _ytdl(bot, message, isZip=False, isLeech=False):
             botstart = f"http://t.me/{b_uname}"
             buttons.buildbutton("Click Here to Start Me", f"{botstart}")
             startwarn = f"Dear {uname},\n\n<b>I found that you haven't started me in PM (Private Chat) yet.</b>\n\n" \
-                        f"From now on i will give link and leeched files in PM and log channel only"
+                        f"From now on i will give link and leeched files in PM only"
             reply_message = sendMessage(startwarn, bot, message, buttons.build_menu(2))
             Thread(target=auto_delete_message, args=(bot, message, reply_message)).start()
             return reply_message
@@ -411,11 +411,11 @@ def ytdl_confirm(update, context):
     try:
         listnerInfo = btn_listener[msg_id]
     except KeyError:
-        return editMessage(f"<b>Download has been cancelled or already started!</b>", message)
+        return editMessage(f"<b>Oops, Download has been cancelled or already started!</b>", message)
     extra = listnerInfo[0]
     listener = listnerInfo[1]
     if user_id != listener[1].from_user.id and not CustomFilters.owner_query(user_id):
-        return query.answer("You are not the owner of this download", show_alert=True)
+        return query.answer("You are not the owner of this download, Nikal ❤️de", show_alert=True)
     elif data[1] == 'scat':
         c_index = int(data[3])
         u_index = None
