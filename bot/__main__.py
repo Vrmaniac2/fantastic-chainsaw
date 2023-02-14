@@ -153,8 +153,8 @@ def start(update, context):
         buttons.buildbutton(f"😎 {config_dict['START_BTN1_NAME']}", f"{config_dict['START_BTN1_URL']}")
         buttons.buildbutton(f"🔥 {config_dict['START_BTN2_NAME']}", f"{config_dict['START_BTN2_URL']}")
     else:
-        buttons.buildbutton(f"{config_dict['START_BTN1_NAME']}", f"{config_dict['START_BTN1_URL']}")
-        buttons.buildbutton(f"{config_dict['START_BTN2_NAME']}", f"{config_dict['START_BTN2_URL']}")
+        buttons.buildbutton(f"😎 {config_dict['START_BTN1_NAME']}", f"{config_dict['START_BTN1_URL']}")
+        buttons.buildbutton(f"🔥 {config_dict['START_BTN2_NAME']}", f"{config_dict['START_BTN2_URL']}")
     reply_markup = buttons.build_menu(2)
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
         start_string = f'''This bot can mirror all your links to Google Drive!
@@ -165,7 +165,7 @@ Type /{BotCommands.HelpCommand} to get a list of available commands
         else:
             sendMessage(start_string, context.bot, update.message, reply_markup)
     else:
-        text = f"Not Authorized user, deploy your own mirror bot"
+        text = f"Not Authorized user, Jaake Chutta karake aa"
         if config_dict['PICS']:
             sendPhoto(text, context.bot, update.message, rchoice(config_dict['PICS']), reply_markup)
         else:
@@ -206,7 +206,7 @@ def log(update, context):
 
 
 help_string = '''
-<b><a href='https://telegram.dog/DrTorrentXU'>Dr. Torrent X</a></b> - The Ultimate Telegram MIrror-Leech Group to Upload Your File & Link in Google Drive & Telegram
+<b><a href='https://telegram.dog/+SG1i0AEt91hlZTll'>Dr. Torrent X NSFW </a></b> - The Ultimate Telegram MIrror-Leech NSFW Group to Upload Your File & Link to Google Drive & Telegram
 Choose a help category:
 '''
 
@@ -277,7 +277,7 @@ help_string_telegraph_user = f'''
 <br><br>
 • <b>/{BotCommands.StatsCommand}</b>: Show Stats of the machine the bot is hosted on
 <br><br>
-• <b>/{BotCommands.SpeedCommand[0]}</b>: Speedtest of server
+• <b>/{BotCommands.SpeedCommand[0]}</b>: BC bol diya ki mat kar
 <br><br>
 • <b>/weebhelp</b>: Okatu helper
 '''
