@@ -230,11 +230,11 @@ def start_clone(listelem):
                     msg = f"<b>🗂️ Name: </b><{config_dict['NAME_FONT']}>{escape(name)}</{config_dict['NAME_FONT']}>\n"
                 else:
                     msg = f"<b>Name: </b><{config_dict['NAME_FONT']}>{escape(name)}</{config_dict['NAME_FONT']}>\n"
-                botpm = f"\n<b>Hey {tag}!, I have sent your cloned links in PM.</b>\n"
+                botpm = f"\n<b>Hey {tag}!, I have sent your cloned links in PM. ENJOY !</b>\n"
                 buttons = ButtonMaker()
                 b_uname = bot.get_me().username
                 botstart = f"http://t.me/{b_uname}"
-                buttons.buildbutton("View links in PM", f"{botstart}")
+                buttons.buildbutton("Sumdi mai aa jaa 😘", f"{botstart}")
                 if config_dict['PICS']:
                     sendPhoto(msg + botpm, bot, message, rchoice(config_dict['PICS']), buttons.build_menu(2))
                 else:
@@ -351,7 +351,7 @@ def start_clone(listelem):
         if config_dict['EMOJI_THEME']:
             logwarn = f"<b>⚠️ I have sent files in Mirror Log Channel. Join <a href=\"{config_dict['MIRROR_LOG_URL']}\">Mirror Log channel</a> </b>\n"
         else:
-            logwarn = f"<b>I have sent files in Mirror Log Channel. Join <a href=\"{config_dict['MIRROR_LOG_URL']}\">Mirror Log channel</a> </b>\n"
+            logwarn = f"<b>Thank You for using Dr. Torrent NSFW. Join <a href='https://telegram.dog/+SG1i0AEt91hlZTll'>Dr. Torrent X NSFW </a> </b>\n"
     else:
         logwarn = ''
 
@@ -428,7 +428,7 @@ def confirm_clone(update, context):
     except KeyError:
         return editMessage(f"<b>Download has been cancelled or already started!</b>", message)
     if user_id != listenerInfo[1].from_user.id:
-        return query.answer("You are not the owner of this task!", show_alert=True)
+        return query.answer("You are not the owner of this task! Nikal ❤️de ", show_alert=True)
     elif data[1] == 'scat':
         c_index = int(data[3])
         u_index = None
