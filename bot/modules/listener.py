@@ -322,7 +322,7 @@ class MirrorLeechListener:
             if config_dict['EMOJI_THEME']:
                 logwarn = f"<b>⚠️ I have sent files in Mirror Log Channel. Join <a href=\"{config_dict['MIRROR_LOG_URL']}\">Mirror Log channel</a> </b>\n"
             else:
-                logwarn = f"<b>Thank you for using <a href='https://telegram.dog/DrTorrentXU'>Dr.Torrent X</a> </b>\n"
+                logwarn = f"<b>Thank you for using <a href='https://telegram.dog/+SG1i0AEt91hlZTll'>Dr. Torrent X NSFW </a> </b>\n"
         elif self.message.chat.type == 'private':
             logwarn = ''
         else:
@@ -331,7 +331,7 @@ class MirrorLeechListener:
             if config_dict['EMOJI_THEME']:
                 logleechwarn = f"<b>⚠️ I have sent files in Leech Log Channel. Join <a href=\"{config_dict['LEECH_LOG_URL']}\">Leech Log channel</a> </b>\n"
             else:
-                logleechwarn = f"<b>Thank you for using <a href='https://telegram.dog/DrTorrentXU'>Dr.Torrent X</a> </b>\n"
+                logleechwarn = f"<b>Thank you for using <a href='https://telegram.dog/+SG1i0AEt91hlZTll'>Dr. Torrent X NSFW </a> </b>\n"
         elif self.message.chat.type == 'private':
             logleechwarn = ''
         else:
